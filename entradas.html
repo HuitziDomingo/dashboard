@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <title>Entradas</title>
+    <link rel="stylesheet" href="css/listefi.css"/>
+    <link rel="stylesheet" href="css/raychel.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/fonts/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body class="body-mgtop">
+  <!---Encabezado del sitio.-->
+  <header class="gd-100 header-board">
+      <div class="btn-menu gd-10 gd-m-30">
+          <button class="btn phantom-white" id="btnMenu">
+            <span class="icon-bars"></span>
+          </button>
+      </div>
+      <div class="logo gd-90 gd-m-70">
+          <a href="index.html"><h4 class="fnt-white tx-center">Z o o M</h4></a>
+      </div>
+  </header>
+    <!---contenedor principal del menu y del sitio.-->
+    <div class="container cont-1400">
+      <!---contenedor principal del menu.-->
+      <nav class="navigation" id="contMenu" data-state="hide">
+            <ul class="bx-center">
+                <li class="btn-material">
+                    <a href="index.html"><span class="icon-home fnt-white pd-few"> <span class="roboto">Inicio</span></span></a>
+                </li>
+                <li class="btn-material">
+                    <a href="entradas.html"><span class="icon-user-plus fnt-white pd-few"> <span class="roboto"> Añadir Alumno</span></span></a>
+                </li>
+                <li class="btn-material">
+                    <a href="#"><span class="icon-cog fnt-white pd-few"> <span class="roboto"> Configurar Cuenta</span></span></a>
+                </li>
+                <li class="btn-material">
+                    <a href="salir.html"><span class="icon-power-off fnt-white pd-few"> <span class="roboto">Cerrar Sesion</span></span></a>
+                </li>
+            </ul>
+        </nav>
+      <!---contenedor principal del sitio.-->
+      <div class="cont-main" id="contMain" data-state="hide">
+          <!---Cabeza de notificaciones-->
+          <div class="alert no-mg" id="smoove-up" data-state="show">
+              <span class="icon-gear material-icons fnt-black"></span>
+              <h5>
+                  <strong class="fnt-black">Panel de Alumnos</strong>
+              </h5> <span class="hide-b">Profesor: Juan Vargas Ramirez</span>
+              <div class="bx-right tip-actives">
+                  <div class="cont-tooltip-down">
+                      <span class="icon-users material-icons"></span>
+                      <span class="tooltip-text">3 Usuarios Activos</span>
+                  </div>
+              </div>
+
+              <div class="bx-right tip-actives">
+                  <div class="cont-tooltip-down">
+                      <span class="icon-bell-o material-icons"></span>
+                      <span class="tooltip-text">2 Notificaciones</span>
+                  </div>
+              </div>
+
+              <div class="bx-right tip-actives">
+                  <div class="cont-tooltip-down">
+                      <span class="icon-info-circle material-icons"></span>
+                      <span class="tooltip-text">Ver Detalles</span>
+                  </div>
+              </div>
+          </div>
+        <!---Formulario con Rachel-->
+        <div class="mg-sec" id="smoove-up" data-state="show">
+            <form class="cont-600 container form-addStudent"  method="post" action="" >
+                <h3 class="tx-center fnt-black"><span class="icon-user-plus fnt-black"></span> Añadir Alúmno.</h3>
+                <p class="tx-center">Control de Alumnos</p>
+                <div class="cont-input">
+                    <input type="text" class="input-material" required/>
+                    <span class="highlight highlight-amber"></span>
+                    <span class="bar bar-amber"></span>
+                    <label class="amber icon-user label-material"> Nombre y Apellidos</label>
+                </div>
+                <div class="cont-input">
+                    <input type="text" class="input-material" required/>
+                    <span class="highlight highlight-amber"></span>
+                    <span class="bar bar-amber"></span>
+                    <label class="amber icon-users label-material"> Grupo</label>
+                </div>
+                <div class="cont-input">
+                    <textarea class="textarea-material" required></textarea>
+                    <span class="highlight highlight-amber"></span>
+                    <span class="bar bar-amber"></span>
+                    <label class="amber icon-paperclip label-material"> Comentario</label>
+                </div>
+                <div class="tx-center clearfix">
+                    <button class="btn-raych btn-raych2" type="submit">
+                        Añadir
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!---Sripts de programacion.-->
+	<script src="js/raychel.js"></script>
+	<script src="js/funciones.js"></script>
+	<script>
+    raychel.menuOffCanvas();
+	</script>
+</body>
+
+</html>
